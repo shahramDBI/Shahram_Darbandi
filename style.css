@@ -1,0 +1,123 @@
+body::before {
+    display: block;
+    content: '';
+    height: 80px;
+}
+
+body {
+    background: linear-gradient(-45deg, #225763, #070f4e, #263849, #3b50b2);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.mask-custom {
+    /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.52);
+        box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(2.8px);
+        -webkit-backdrop-filter: blur(2.8px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn:hover{
+    
+}
+
+.card-light{
+    border: 3px solid #070f4e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: boxLight 4s infinite;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        border-color: lightblue;
+    }
+}
+
+/* Standard syntax */
+@keyframes boxLight {
+    50% {
+        box-shadow: 8px 8px 16px #999;
+    }
+}
+
+
+h1{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h3{
+    text-shadow: 2px 2px 4px whitesmoke;
+}
+
+p{
+    text-shadow: 1px 1px 2px #000000;
+}
+
+div{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Progress */
+.progress-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.progress-outer {
+    background: #fff;
+    padding: 5px 60px 5px 5px;
+    border: 5px solid #bebfbf;
+    border-radius: 45px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.progress {
+    background: #bebfbf;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.progress .progress-bar {
+    border-radius: 20px;
+    box-shadow: none;
+    animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #6b7880;
+    position: absolute;
+    top: -2px;
+    right: 10px;
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0;
+    }
+}
+
